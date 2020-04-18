@@ -3,11 +3,11 @@
 }
 
 .user-message {
-	background-color: rgba(0, 67, 255, 0.33);
+	background-color: #F7F7F7;
 }
 
 .chat-message {
-	background-color: rgba(128, 0, 95, 0.35);
+	background-color: #DBDBDB;
 }
 
 .send-btn {
@@ -19,7 +19,7 @@
 }
 
 .send-btn:hover {
-	color: rgba(0, 128, 0, 0.61);
+	color: rgba(0, 128, 0, 0.61); //green colour hover
 }
 
 #text-box {
@@ -33,7 +33,11 @@
 }
 
 .navbar {
-	background-color: #0006;
+	background-color: #7D7D7D;
+}
+
+.navbar-light .navbar-brand{
+	color: #FFFFFF;
 }
 
 #app {

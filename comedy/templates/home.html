@@ -9,8 +9,10 @@
   	<div class="row">
   		<div class="col-md-12">
   			<div class="card col-md-6" v-for="message in messages" v-bind:class="{ 'user-message': message.user,  'chat-message': message.chat_bot, 'offset-md-6': message.chat_bot}">
+          <!-- if message from user is true, appends message from user. vice versa-->
 	  			<div class="card-body">
 	  				[[message.text]]
+            <!-- appends the main message-->
 	  			</div>
 	  		</div>
   		</div>
@@ -19,7 +21,9 @@
   	<div id="text-box" class="row top-padding">
   		<div class="col-md-12">
   			<textarea class="form-control" v-bind:placeholder="placeholder" v-model="input" v-bind:class="{ 'border-danger': send_blank}" v-on:change="check_content"></textarea>
+        <!-- text input field-->
   			<i class="fas fa-arrow-circle-right send-btn" v-on:click="add_message"></i>
+        <!-- send icon. when icon is clicked, adds message to be sent to chatbot via AJAX-->
   		</div>
   	</div>
   </div>
