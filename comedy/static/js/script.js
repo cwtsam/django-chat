@@ -1,12 +1,12 @@
 $(function() {
 	function get_response() {
-		var value = $('.text').val();
+		var value = $('.text').val(); //uses jquery, gets result from text field
 
-		if (value.length > 0) {
-			$('.no-message').addClass('hidden');
+		if (value.length > 0) { //check if there is value
+			$('.no-message').addClass('hidden'); // message that pops up of no text
 			$('.text').val('');
 
-			var html_string = `<div class="card col-md-6 user-message"><div class="card-body">${value}</div></div>`;
+			var html_string = `<div class="card col-md-6 user-message"><div class="card-body">${value}</div></div>`; //appends value to html
 
 			$('.messages').append(html_string);
 
@@ -15,9 +15,9 @@ $(function() {
 			socket.onmessage = function(event) {
 				data = JSON.parse(event.data);
 
-				var html_string = `<div class="card col-md-6 chat-message offset-md-6"><div class="card-body">${data['response']}</div></div>`;
+				var html_string = `<div class="card col-md-6 chat-message offset-md-6"><div class="card-body">${data['response']}</div></div>`; //response from chatbot
 			
-				$('.messages').append(html_string);
+				$('.messages').append(html_string); 
 				$('.text').val('');
 			};
 

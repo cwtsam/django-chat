@@ -23,7 +23,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', home), # only has a homepage, handles by websockets
 ]
 
 if settings.DEBUG == True:
