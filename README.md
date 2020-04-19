@@ -2,7 +2,7 @@
 
 cwtsam's edits
 
-![](./images/screenshot.bmp)
+![](./images/capture1.png)
 
 Django Project with [ChatterBot](https://github.com/gunthercox/ChatterBot) as the chatbot. The frontend using VueJS.
 
