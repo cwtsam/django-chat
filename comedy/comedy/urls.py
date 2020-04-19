@@ -24,7 +24,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home), # handles visits from the homepage
-    path('get-response/', get_response), # handles AJAX requests
+    path('get-response/', get_response), # handles AJAX POST requests
 ]
 
 if settings.DEBUG == True:

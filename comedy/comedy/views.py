@@ -37,5 +37,5 @@ def get_response(request):  # passes json AJAX request
 
 
 def home(request, template_name="home.html"):
-	context = {'title': 'Chatbot Version 1.0'}
+	context = {'title': 'RemindMe'}
 	return render_to_response(template_name, context) ## allow rendering of the home page
