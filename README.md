@@ -1,6 +1,6 @@
-# django-chat Version 1.0
+Building upon Django chatbot by sam-thecoder
 
-cwtsam's edits
+# django-chat Version 1.0
 
 ![](./images/capture1.png)
 
@@ -16,3 +16,9 @@ Once you have installed all, you can running the following command:
 
 Once you have it running type message into textbox and it will return a message.
 
+Change List:
+- Added web speech-to-text feature
+
+Changes To-do:
+- update to latest Django version
+- add chatbot voice response
